@@ -45,3 +45,10 @@
         opacity: 1;
     }
 }
+
+@media screen and (max-width: 768px) {
+    .card:hover{
+    box-shadow:-5px -5px 5px black, 5px 5px 5px black;
+    transform:translateX(-20px) translateY(10px) translateZ(50px);
+}
+}
