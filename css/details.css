@@ -3,7 +3,7 @@
 }
 .hero-section {
   position: relative;
-  background: url("details-img/Selection.png") no-repeat center center/cover;
+  background: url("./../details-img/Selection.png") no-repeat center center/cover;
   height: 60vh;
 }
 
@@ -22,3 +22,9 @@
 #countdown div {
     text-align: center;
   }
+.text-sp {
+  text-shadow: 2px 0px 5px rgb(79, 39, 138);
+}
+.count-s{
+  background-color: rgba(233, 217, 248, 0.757);
+}

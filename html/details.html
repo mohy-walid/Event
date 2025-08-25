@@ -10,8 +10,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
     integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
-  <link rel="stylesheet" href="details.css">
   <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="./../css/details.css">
 
   <title>Event Details</title>
 </head>
@@ -30,9 +30,9 @@
   <!--Learn section-->
   <section class="py-5 " data-aos="fade-right" data-aos-delay="200">
     <div class="container">
-      <div class="row align-items-stretch ">
+      <div class="row align-items-stretch justify-content-center ">
         <!-- (Event Info) -->
-        <div class="col-md-6 mb-4 animate-fadeInUp">
+        <div class="col-md-4 mb-4 animate-fadeInUp">
           <div class="p-4 bg-white shadow rounded h-100">
             <p><i class="fa-regular fa-calendar-days" style="color: #000b58;"></i> October 26-28, 2024</p>
             <p><i class="fa-regular fa-clock" style="color: #000b58;"></i> 9:00 AM - 5:00 PM (Daily)</p>
@@ -42,8 +42,8 @@
         </div>
 
         <!-- (Countdown Timer) -->
-        <div class="col-md-6 mb-4">
-          <div class="p-4 bg-white shadow rounded h-100 text-center">
+        <div class="col-md-6 mb-4 ">
+          <div class="p-4 count-s shadow rounded h-100 text-center">
             <h5>Event Starts In:</h5>
             <div id="countdown" class="d-flex justify-content-center gap-3 fs-4 fw-bold"></div>
           </div>
@@ -82,13 +82,13 @@
   <!--Speakers-->
  <section class="py-5">
   <div class="container">
-    <h3 class="mb-4 text-center" data-aos="zoom-in" data-aos-delay="200">Our Speakers</h3>
+    <h3 class="mb-4 text-center text-sp" data-aos="zoom-in" data-aos-delay="200">Our Speakers</h3>
 
     <div class="row flex-nowrap overflow-auto g-4 pb-3">
       
       <div class="col-10 col-sm-6 col-md-3 d-flex">
-        <div class="card text-center shadow-sm h-100" data-aos="zoom-in" data-aos-delay="100">
-          <img src="details-img/Selectionn.png" class="card-img-top rounded-circle p-3" alt="Speaker 1">
+        <div class="card text-center shadow-sm h-100 " data-aos="zoom-in" data-aos-delay="100">
+          <img src="./../details-img/Selectionn.png" class="card-img-top rounded-circle p-3" alt="Speaker 1">
           <div class="card-body d-flex flex-column">
             <h4 class="card-title">Dr. Anya Sharma</h4>
             <p class="text-primary fs-5">CEO, Quantum Leap Innovations</p>
@@ -99,7 +99,7 @@
 
       <div class="col-10 col-sm-6 col-md-3 d-flex">
         <div class="card text-center shadow-sm h-100" data-aos="zoom-in" data-aos-delay="200">
-          <img src="details-img/Selection (1).png" class="card-img-top rounded-circle p-3" alt="Speaker 2">
+          <img src="./../details-img/Selection (1).png" class="card-img-top rounded-circle p-3" alt="Speaker 2">
           <div class="card-body d-flex flex-column">
             <h4 class="card-title">Prof. Ben Carter</h4>
             <p class="text-primary fs-5">Lead Researcher, Global Innovations</p>
@@ -110,7 +110,7 @@
 
       <div class="col-10 col-sm-6 col-md-3 d-flex">
         <div class="card text-center shadow-sm h-100" data-aos="zoom-in" data-aos-delay="300">
-          <img src="details-img/Selection (2).png" class="card-img-top rounded-circle p-3" alt="Speaker 3">
+          <img src="./../details-img/Selection (2).png" class="card-img-top rounded-circle p-3" alt="Speaker 3">
           <div class="card-body d-flex flex-column">
             <h4 class="card-title">Sarah Jenson</h4>
             <p class="text-primary fs-5">CEO, InnovateX</p>
@@ -121,7 +121,7 @@
 
       <div class="col-10 col-sm-6 col-md-3 d-flex">
         <div class="card text-center shadow-sm h-100" data-aos="zoom-in" data-aos-delay="400">
-          <img src="details-img/Selection (3).png" class="card-img-top rounded-circle p-3" alt="Speaker 4">
+          <img src="./../details-img/Selection (3).png" class="card-img-top rounded-circle p-3" alt="Speaker 4">
           <div class="card-body d-flex flex-column">
             <h4 class="card-title">Michael Chen</h4>
             <p class="text-primary fs-5">Head of Product, FutureLink</p>
@@ -174,7 +174,7 @@
     loadComponent("navber", "../html/nav.html")
     loadComponent("footer", "../html/footer.html")
   </script>
-  <script src="details.js"></script>
+  <script src="./../js/details.js"></script>
 
 </body>
 
