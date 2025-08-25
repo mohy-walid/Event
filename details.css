@@ -1,0 +1,23 @@
+.hero-section {
+  position: relative;
+  background: url("details-img/Selection.png") no-repeat center center/cover;
+  height: 60vh; /* تقدري تغيري الطول */
+}
+
+.hero-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(71, 61, 139, 0.487); /* اللون البنفسجي مع شفافية */
+}
+
+.hero-section .content {
+  position: relative;
+  z-index: 1;
+}
+#countdown div {
+    text-align: center;
+  }
+
