@@ -21,7 +21,6 @@ It also supports volunteering opportunities, posting new events, and contacting 
     - [Feature 5: Contact Us](#feature-5-contact-us)
       - [Feature 5 Live Design Preview](#feature-5-live-design-preview)
   - [System Requirements](#system-requirements)
-  - [Getting Started](#getting-started)
   - [For Registered Users](#for-registered-users)
 
 ---
@@ -130,3 +129,14 @@ It also supports volunteering opportunities, posting new events, and contacting 
 - Stable internet connection
 
 ---
+# For Registered Users
+
+## By creating an account, users can:
+
+- Post new events and manage their own content.
+
+- Register as volunteers and track their participation.
+
+- Save favorite events for later.
+
+- Access their event history and manage registrations.
