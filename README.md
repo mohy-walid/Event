@@ -88,7 +88,7 @@ It also supports volunteering opportunities, posting new events, and contacting 
 ### Feature 4: Post Event
 
 #### Feature 4 Live Design Preview
-![Post Event Screenshot](./img/post-event.png)  
+![Post Event Screenshot](./img/post.png)  
 *Fig 4.1 - Add new event post form*
 
 ---
