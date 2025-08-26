@@ -69,7 +69,7 @@ It also supports volunteering opportunities, posting new events, and contacting 
 ### Feature 3: Event Details
 
 #### Feature 3 Live Design Preview
-![Event Details Screenshot](./img/event-details.png)  
+![Event Details Screenshot](./img/eventdetails.png)  
 *Fig 3.1 - Full event details page with description and registration options*
 
 ---
