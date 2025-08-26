@@ -16,7 +16,7 @@ It also supports volunteering opportunities, posting new events, and contacting 
       - [Feature 2 Live Design Preview](#feature-2-live-design-preview)
     - [Feature 3: Event Details](#feature-3-event-details)
       - [Feature 3 Live Design Preview](#feature-3-live-design-preview)
-    - [Feature 4: Add Post](#feature-4-add-post)
+    - [Feature 4: Post Event](#feature-4-post-event)
       - [Feature 4 Live Design Preview](#feature-4-live-design-preview)
     - [Feature 5: Contact Us](#feature-5-contact-us)
       - [Feature 5 Live Design Preview](#feature-5-live-design-preview)
@@ -30,7 +30,7 @@ It also supports volunteering opportunities, posting new events, and contacting 
 ### Feature 1: Homepage
 
 #### Feature 1 Live Design Preview
-![Homepage Screenshot](./images/homepage.png)  
+![Homepage Screenshot](./img/home.jpg)  
 *Fig 1.1 - Homepage showcasing featured events and navigation*
 
 ---
@@ -69,7 +69,7 @@ It also supports volunteering opportunities, posting new events, and contacting 
 ### Feature 3: Event Details
 
 #### Feature 3 Live Design Preview
-![Event Details Screenshot](img/event-details.png)  
+![Event Details Screenshot](./img/event-details.png)  
 *Fig 3.1 - Full event details page with description and registration options*
 
 ---
@@ -85,10 +85,10 @@ It also supports volunteering opportunities, posting new events, and contacting 
 
 ---
 
-### Feature 4: Add Post
+### Feature 4: Post Event
 
 #### Feature 4 Live Design Preview
-![Add Post Screenshot](./images/add-post.png)  
+![Post Event Screenshot](./img/post-event.png)  
 *Fig 4.1 - Add new event post form*
 
 ---
@@ -107,7 +107,7 @@ It also supports volunteering opportunities, posting new events, and contacting 
 ### Feature 5: Contact Us
 
 #### Feature 5 Live Design Preview
-![Contact Us Screenshot](./images/contact-us.png)  
+![Contact Us Screenshot](./img/contact.png)  
 *Fig 5.1 - Contact form for inquiries and support*
 
 ---
