@@ -7,6 +7,6 @@ function loadComponent(id, file) {
 }
 document.querySelectorAll(".visit-btn").forEach(function(btn){
   btn.addEventListener("click", function(){
-    window.location.href = "details.html";
+    window.location.href = "html/details.html";
   });
 });
