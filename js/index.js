@@ -5,3 +5,8 @@ function loadComponent(id, file) {
       document.getElementById(id).innerHTML = data;
     });
 }
+document.querySelectorAll(".visit-btn").forEach(function(btn){
+  btn.addEventListener("click", function(){
+    window.location.href = "details.html";
+  });
+});
