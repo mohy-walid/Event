@@ -50,7 +50,7 @@ It also supports volunteering opportunities, posting new events, and contacting 
 ### Feature 2: Volunteering Page
 
 #### Feature 2 Live Design Preview
-![Volunteering Screenshot](img/volunteering.jpg)  
+![Volunteering Screenshot](./img/Volunteering.jpg)  
 *Fig 2.1 - Volunteering opportunities listing*
 
 ---
