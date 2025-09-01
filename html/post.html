@@ -3,127 +3,71 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="../css/all.min.css">
-    <link rel="stylesheet" href="../css/bootstrap.min.css">
-    <link rel="stylesheet" href="../css/main.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Borel&family=Indie+Flower&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  
+
+  <!-- Bootstrap CSS -->
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+   <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="../css/all.min.css">
   <title>Post a New Event</title>
-  <style>
-    /* Keyframes for custom animations */
-    @keyframes fadeInUp {
-      0% { opacity: 0; transform: translateY(30px); }
-      100% { opacity: 1; transform: translateY(0); }
-    }
-    .fade-in-up {
-      animation: fadeInUp 0.8s ease-out forwards;
-    }
-
-    @keyframes fadeIn {
-      from { opacity: 0; }
-      to { opacity: 1; }
-    }
-    .fade-in {
-      animation: fadeIn 1s ease-in forwards;
-    }
-  </style>
+  
 </head>
-<body class="bg-gray-100 flex flex-col min-h-screen pt-10">
-    
-<nav class="fixed top-0 left-0 w-full z-50 bg-gray-50 shadow-md">
-  <div class="container mx-auto flex items-center justify-between px-6 py-9">
-    
-    <!-- Logo -->
-    <div class="flex items-center gap-2">
-      <img src="../img/9c5e0db0-ca21-47c4-b07a-4215d667ad16_62f9708f-375c-48ad-b0d7-4109d9248ce7_1406497_image.svg" alt="logo" class="w-8 h-8">
-<h3 class="m-0 font-[Borel] text-2xl font-bold text-[#5048E5]">logo</h3>
-    </div>
+<body class="bg-light d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-4">
+  <div class="container">
 
-    <!-- Links -->
-    <ul class="hidden md:flex items-center gap-8">
-      <li>
-        <a href="#" 
-           class="no-underline relative font-medium text-gray-900 hover:text-indigo-600 transition pb-1
-                  after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-indigo-600 
-                  hover:after:w-full after:transition-all after:duration-300 font-semibold">
-          Home
-        </a>
-      </li>
-      <li>
-        <a href="#" 
-           class="no-underline relative font-medium text-gray-900 hover:text-indigo-600 transition pb-1
-                  after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-indigo-600 
-                  hover:after:w-full after:transition-all after:duration-300">
-          Events
-        </a>
-      </li>
-      <li>
-        <a href="#" 
-           class="no-underline relative font-medium text-gray-900 hover:text-indigo-600 transition pb-1
-                  after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-indigo-600 
-                  hover:after:w-full after:transition-all after:duration-300">
-          Volunteer
-        </a>
-      </li>
-      <li>
-        <a href="#" 
-           class="no-underline relative font-medium text-gray-900 hover:text-indigo-600 transition pb-1
-                  after:absolute after:left-0 after:bottom-0 after:w-0 after:h-[2px] after:bg-indigo-600 
-                  hover:after:w-full after:transition-all after:duration-300">
-          Contact Us
-        </a>
-      </li>
-    </ul>
+        <div class="logo">
+<img class="" src="../img/9c5e0db0-ca21-47c4-b07a-4215d667ad16_62f9708f-375c-48ad-b0d7-4109d9248ce7_1406497_image.svg" alt="">
 
-    <!-- Buttons -->
-    <div class="flex items-center gap-4">
-      <button class="px-5 py-2 border border-indigo-600 text-indigo-600 rounded-full 
-                     hover:bg-indigo-600 hover:text-white transition">
-        Post Your Event
-      </button>
-      <button class="px-5 py-2 bg-indigo-600 text-white rounded-full hover:bg-indigo-700 
-                     transition flex items-center gap-2">
-        <i class="fa-solid fa-user-group"></i> Profile
-      </button>
+<h3>EventLinker</h3>
+        </div>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav  mx-auto">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Events</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Volunteer</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-link" href="#">Contact Us</a>
+        </li>
+      </ul>
+      <div class="d-flex p-4">
+        <button type="button" class="btn btn-outline mx-2 px-4 rounded-5">Post Your Event</button>
+        <button type="button" class="btn btn-primary px-4 rounded-5"><i class="fa-solid fa-user-group"></i> Profile</button>
+      </div>
     </div>
+  
   </div>
 </nav>
 
-<div class="pt-20"></div
-
-
-
-
-
-
-
-    
-
   <!-- Main Content -->
-  <div class="flex-grow flex items-center justify-center">
-    <div class="w-full max-w-3xl bg-white shadow-lg rounded-lg overflow-hidden fade-in-up">
+  <div class="flex-grow-1 d-flex align-items-center justify-content-center">
+    <div class="container bg-white shadow-lg rounded fade-in-up p-0" style="max-width: 900px;">
       <!-- Header -->
-      <div class="p-6 border-b fade-in">
-        <h1 class="text-2xl font-bold text-gray-800">Post a New Event</h1>
-        <p class="text-gray-500 text-sm">Fill in the details below to create your event listing.</p>
+      <div class="p-4 border-bottom fade-in">
+        <h1 class="h4 fw-bold text-dark">Post a New Event</h1>
+        <p class="text-muted small">Fill in the details below to create your event listing.</p>
       </div>
 
-      <form class="p-6 space-y-8">
+      <form class="p-4">
         <!-- Event Title + Category -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div class="fade-in-up">
-            <label class="block text-sm font-medium text-gray-700">Event Title</label>
-            <input type="text" placeholder="Enter event title"
-              class="mt-2 w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500 transition-transform duration-300 hover:scale-105">
+        <div class="row g-4">
+          <div class="col-md-6 fade-in-up">
+            <label class="form-label">Event Title</label>
+            <input type="text" placeholder="Enter event title" class="form-control">
           </div>
-          <div class="fade-in-up" style="animation-delay:0.2s">
-            <label class="block text-sm font-medium text-gray-700">Category</label>
-            <select
-              class="mt-2 w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500 transition-transform duration-300 hover:scale-105">
+          <div class="col-md-6 fade-in-up" style="animation-delay:0.2s">
+            <label class="form-label">Category</label>
+            <select class="form-select">
               <option>Select a category</option>
               <option>Conference</option>
               <option>Workshop</option>
@@ -133,80 +77,66 @@
         </div>
 
         <!-- Date + Time -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div class="fade-in-up" style="animation-delay:0.4s">
-            <label class="block text-sm font-medium text-gray-700">Date</label>
-            <input type="date"
-              class="mt-2 w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500 transition-transform duration-300 hover:scale-105">
+        <div class="row g-4 mt-3">
+          <div class="col-md-6 fade-in-up" style="animation-delay:0.4s">
+            <label class="form-label">Date</label>
+            <input type="date" class="form-control">
           </div>
-          <div class="fade-in-up" style="animation-delay:0.6s">
-            <label class="block text-sm font-medium text-gray-700">Time</label>
-            <input type="time"
-              class="mt-2 w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500 transition-transform duration-300 hover:scale-105">
+          <div class="col-md-6 fade-in-up" style="animation-delay:0.6s">
+            <label class="form-label">Time</label>
+            <input type="time" class="form-control">
           </div>
         </div>
 
         <!-- Location Details -->
-        <div class="fade-in-up" style="animation-delay:0.8s">
-          <h2 class="text-lg font-semibold text-gray-800 mb-4">Location Details</h2>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d19680.29967123197!2d30.842387056901913!3d29.311137728586633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2seg!4v1756154006336!5m2!1sar!2seg" width="600" height="400" class="rounded-md w-full"
-            style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          <input type="text" placeholder="Enter venue name or 'Virtual'"
-            class="mt-4 w-full rounded-md border-gray-300 shadow-sm focus:ring-blue-500 focus:border-blue-500 transition-transform duration-300 hover:scale-105">
+        <div class="fade-in-up mt-4" style="animation-delay:0.8s">
+          <h2 class="h6 fw-semibold text-dark mb-3">Location Details</h2>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d19680.29967123197!2d30.842387056901913!3d29.311137728586633!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sar!2seg!4v1756154006336!5m2!1sar!2seg"
+            width="100%" height="400" class="rounded w-100" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+          <input type="text" placeholder="Enter venue name or 'Virtual'" class="form-control mt-3">
         </div>
 
         <!-- Event Information -->
-        <div class="fade-in-up" style="animation-delay:1s">
-  <h2 class="text-lg font-semibold text-gray-800 mb-4">Event Information</h2>
-  <label class="block text-sm font-medium text-gray-700">Event Description</label>
-  <textarea rows="4" placeholder="Provide a detailed description of your event..."
-    class="mt-2 w-full rounded-md border border-gray-300 shadow-sm 
-           focus:ring-2 focus:ring-blue-400 focus:border-blue-500 
-           transition duration-300 hover:scale-105"></textarea>
-</div>
-
+        <div class="fade-in-up mt-4" style="animation-delay:1s">
+          <h2 class="h6 fw-semibold text-dark mb-3">Event Information</h2>
+          <label class="form-label">Event Description</label>
+          <textarea rows="4" placeholder="Provide a detailed description of your event..." class="form-control"></textarea>
+        </div>
 
         <!-- Event Banner Image -->
-        <div class="fade-in-up" style="animation-delay:1.2s">
-          <label class="block text-sm font-medium text-gray-700 mb-2">Event Banner Image</label>
+        <div class="fade-in-up mt-4" style="animation-delay:1.2s">
+          <label class="form-label mb-2">Event Banner Image</label>
           <label for="banner-upload"
-            class="flex flex-col items-center justify-center w-full h-40 border-2 border-dashed border-gray-300 rounded-lg cursor-pointer bg-gray-50 hover:bg-gray-100 transition-transform duration-300 hover:scale-105">
-            <svg class="w-8 h-8 text-gray-400 mb-2" fill="none" stroke="currentColor" stroke-width="2"
-              viewBox="0 0 24 24">
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6H16a5 5 0 010 10h-1"></path>
-              <path stroke-linecap="round" stroke-linejoin="round"
-                d="M15 13l-3-3m0 0l-3 3m3-3v12"></path>
-            </svg>
-            <p class="text-gray-500 text-sm">Drag & drop your banner here, or click to upload</p>
-            <p class="text-gray-400 text-xs mt-1">Recommended size: 1200x400 pixels</p>
+            class="d-flex flex-column align-items-center justify-content-center w-100 border border-2 border-dashed rounded p-4 bg-light text-center"
+            style="cursor:pointer;">
+<svg xmlns="http://www.w3.org/2000/svg" class="icon-upload mb-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6H16a5 5 0 010 10h-1"></path>
+  <path stroke-linecap="round" stroke-linejoin="round" d="M15 13l-3-3m0 0l-3 3m3-3v12"></path>
+</svg>
+            <p class="text-muted small mb-0">Drag & drop your banner here, or click to upload</p>
+            <p class="text-secondary small mt-1">Recommended size: 1200x400 pixels</p>
           </label>
-          <input id="banner-upload" type="file" class="hidden" />
+          <input id="banner-upload" type="file" class="d-none" />
         </div>
 
         <!-- Submit Button -->
-        <div class="flex justify-end fade-in-up" style="animation-delay:1.4s">
-          <button type="submit"
-            class="px-6 py-2 bg-emerald-600 text-white rounded-md shadow hover:bg-emerald-700 focus:ring-2 focus:ring-emerald-400 transition-transform duration-300 hover:scale-110">
-            Submit Event
-          </button>
+        <div class="d-flex justify-content-end mt-4 fade-in-up" style="animation-delay:1.4s">
+          <button type="submit" class="btn btn-success px-4">Submit Event</button>
         </div>
       </form>
     </div>
   </div>
 
   <!-- Footer -->
-<div id="footer"></div>
+  <footer class="text-white py-3 mt-5 fade-in-up" style="background-color:#5048E5; animation-delay:1.6s;">
+    <div class="container d-flex justify-content-center gap-4 small">
+      <a href="#" class="text-white text-decoration-none">Contact Us</a>
+      <a href="#" class="text-white text-decoration-none">About Us</a>
+    </div>
+  </footer>
 
-
-   <script src="../js/bootstrap.bundle.min.js"></script>
-<script src="../js/index.js"></script>
-  <script>
-    loadComponent("navber","../html/nav.html")
-    loadComponent("footer","../html/footer.html")
-</script>
-
-<script src="../js/index.js"></script>
-
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
