@@ -1,29 +1,35 @@
-
 function loadComponent(id, file) {
   fetch(file)
     .then(res => res.text())
     .then(data => {
       document.getElementById(id).innerHTML = data;
 
-  
+      
       setActiveNavLink();
-    });
+    })
+    .catch(err => console.error("Error loading component:", err));
 }
 
 function setActiveNavLink() {
-  const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+  const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+  if (navLinks.length === 0) {
+    console.warn("No nav links found!");
+    return;
+  }
+
   let currentPath = window.location.pathname;
 
-  if (currentPath.startsWith("/Event/")) {
-    currentPath = currentPath.replace("/Event/", "");
-  } else {
-    currentPath = currentPath.replace("/", "");
+  
+  currentPath = currentPath.substring(currentPath.lastIndexOf("/") + 1);
+
+
+  if (currentPath === "" || currentPath === "/") {
+    currentPath = "index.html";
   }
 
   navLinks.forEach(link => {
-    let linkPath = link.getAttribute('href');
-
-    linkPath = linkPath.split("/").pop();
+    let linkPath = link.getAttribute("href");
+    linkPath = linkPath.substring(linkPath.lastIndexOf("/") + 1);
 
     if (linkPath === currentPath) {
       link.classList.add("active");
@@ -32,6 +38,12 @@ function setActiveNavLink() {
     }
   });
 }
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  loadComponent("navbar", "/Event/html/nav.html");
+});
+
 
 document.querySelectorAll(".visit-btn").forEach(function(btn){
   btn.addEventListener("click", function(){
