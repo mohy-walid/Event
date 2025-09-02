@@ -12,23 +12,14 @@ function loadComponent(id, file) {
 
 function setActiveNavLink() {
   const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
-  let currentPath = window.location.pathname;
-
-  if (currentPath.startsWith("/Event/")) {
-    currentPath = currentPath.replace("/Event/", "");
-  } else {
-    currentPath = currentPath.replace("/", "");
-  }
+  const currentPath = window.location.pathname.split('/').pop();
 
   navLinks.forEach(link => {
-    let linkPath = link.getAttribute('href');
-
-    linkPath = linkPath.split("/").pop();
-
+    const linkPath = link.getAttribute('href').split('/').pop();
     if (linkPath === currentPath) {
-      link.classList.add("active");
+      link.classList.add('active');
     } else {
-      link.classList.remove("active");
+      link.classList.remove('active');
     }
   });
 }
