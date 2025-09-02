@@ -24,8 +24,8 @@
   margin: 0 12px;
   transition: color 0.3s ease;
   padding-bottom: 4px;
+  text-decoration: none; /* يتأكد إن مفيش خط افتراضي */
 }
-
 
 .navbar-nav .nav-link::after {
   content: "";
@@ -44,8 +44,9 @@
 
 .navbar-nav .nav-link:hover::after,
 .navbar-nav .nav-link.active::after {
-  width: 100%;
+  width: 100%; /* الخط يتمدد تحت الكلمة */
 }
+
 
 /* Buttons */
 .btn-outline {
@@ -151,4 +152,9 @@ header .btn-primary:hover {
   .form-floating {
     width: 100% !important;
   }
+}
+/*----------------------------------*/
+.icon-upload {
+  width: 40px;
+  height: 40px;
 }
