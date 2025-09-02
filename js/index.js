@@ -1,33 +1,29 @@
+
 function loadComponent(id, file) {
   fetch(file)
     .then(res => res.text())
     .then(data => {
       document.getElementById(id).innerHTML = data;
 
-      
+  
       setActiveNavLink();
-    })
-    .catch(err => console.error("Error loading component:", err));
+    });
 }
 
 function setActiveNavLink() {
-  const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
-    return;
-  }
-
+  const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
   let currentPath = window.location.pathname;
 
-  
-  currentPath = currentPath.substring(currentPath.lastIndexOf("/") + 1);
-
-  
-  if (currentPath === "" || currentPath === "/") {
-    currentPath = "index.html";
+  if (currentPath.startsWith("/Event/")) {
+    currentPath = currentPath.replace("/Event/", "");
+  } else {
+    currentPath = currentPath.replace("/", "");
   }
 
   navLinks.forEach(link => {
-    let linkPath = link.getAttribute("href");
-    linkPath = linkPath.substring(linkPath.lastIndexOf("/") + 1);
+    let linkPath = link.getAttribute('href');
+
+    linkPath = linkPath.split("/").pop();
 
     if (linkPath === currentPath) {
       link.classList.add("active");
