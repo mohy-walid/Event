@@ -40,10 +40,6 @@ function setActiveNavLink() {
 }
 
 
-document.addEventListener("DOMContentLoaded", () => {
-  loadComponent("navbar", "/Event/html/nav.html");
-});
-
 
 document.querySelectorAll(".visit-btn").forEach(function(btn){
   btn.addEventListener("click", function(){
