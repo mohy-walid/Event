@@ -4,13 +4,19 @@ function loadComponent(id, file) {
     .then(data => {
       document.getElementById(id).innerHTML = data;
 
-      // استدعي تحديد اللينك النشط بعد تحميل النافبار
+      // بعد ما يخلص تحميل nav.html استدعي setActiveNavLink
       setActiveNavLink();
-    });
+    })
+    .catch(err => console.error("Error loading component:", err));
 }
 
 function setActiveNavLink() {
   const navLinks = document.querySelectorAll(".navbar-nav .nav-link");
+  if (navLinks.length === 0) {
+    console.warn("⚠️ No nav links found!");
+    return;
+  }
+
   let currentPath = window.location.pathname;
 
   // هات آخر جزء من الرابط (اسم الملف)
@@ -32,6 +38,11 @@ function setActiveNavLink() {
     }
   });
 }
+
+// مثال: تحميل nav.html جوه div#navbar
+document.addEventListener("DOMContentLoaded", () => {
+  loadComponent("navbar", "/Event/html/nav.html");
+});
 
 
 
