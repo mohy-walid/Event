@@ -1,3 +1,15 @@
+
+function loadComponent(id, file) {
+  fetch(file)
+    .then(res => res.text())
+    .then(data => {
+      document.getElementById(id).innerHTML = data;
+
+  
+      setActiveNavLink();
+    });
+}
+
 function setActiveNavLink() {
   const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
   let currentPath = window.location.pathname;
@@ -11,7 +23,6 @@ function setActiveNavLink() {
   navLinks.forEach(link => {
     let linkPath = link.getAttribute('href');
 
-    
     linkPath = linkPath.split("/").pop();
 
     if (linkPath === currentPath) {
