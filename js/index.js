@@ -33,7 +33,6 @@ function setActiveNavLink() {
   });
 }
 
-
 document.querySelectorAll(".visit-btn").forEach(function(btn){
   btn.addEventListener("click", function(){
     window.location.href = "html/details.html";
