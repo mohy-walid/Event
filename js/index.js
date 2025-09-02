@@ -1,28 +1,27 @@
-
-function loadComponent(id, file) {
-  fetch(file)
-    .then(res => res.text())
-    .then(data => {
-      document.getElementById(id).innerHTML = data;
-
-  
-      setActiveNavLink();
-    });
-}
-
 function setActiveNavLink() {
   const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
-  const currentPath = window.location.pathname.split('/').pop();
+  let currentPath = window.location.pathname;
+
+  if (currentPath.startsWith("/Event/")) {
+    currentPath = currentPath.replace("/Event/", "");
+  } else {
+    currentPath = currentPath.replace("/", "");
+  }
 
   navLinks.forEach(link => {
-    const linkPath = link.getAttribute('href').split('/').pop();
+    let linkPath = link.getAttribute('href');
+
+    
+    linkPath = linkPath.split("/").pop();
+
     if (linkPath === currentPath) {
-      link.classList.add('active');
+      link.classList.add("active");
     } else {
-      link.classList.remove('active');
+      link.classList.remove("active");
     }
   });
 }
+
 
 document.querySelectorAll(".visit-btn").forEach(function(btn){
   btn.addEventListener("click", function(){
