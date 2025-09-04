@@ -76,7 +76,13 @@
             <div class="card h-100 w-100" style="border-radius:20px;">
             <img src="/Event/img/card_1.PNG" class="card-img-top img-fluid" alt="...">
             <div class="card-body">
-                <h5 class="card-title fw-bold">Park Cleanup Drive</h5>
+                <h5 class="card-title fw-bold d-flex">Park Cleanup Drive</h5>
+                <span class="d-flex justify-content-end"
+                ><i
+                  class="fa-regular fa-bookmark fa-xl"
+                  style="color: #3D38C4"
+                ></i
+              ></span>
                 <p class="card-text">Green Earth Foundation</p>
                 <span class="badge rounded-pill text-bg-secondary">
                     <i class="fa-solid fa-tag"></i>
@@ -101,7 +107,13 @@
             <div class="card h-100" style="border-radius:20px;">
             <img src="/Event/img/card_2.PNG" class="card-img-top img-fluid" alt="...">
             <div class="card-body">
-                <h5 class="card-title fw-bold">Youth Mentoring Program</h5>
+                <h5 class="card-title fw-bold d-flex">Youth Mentoring Program</h5>
+                <span class="d-flex justify-content-end"
+                ><i
+                  class="fa-regular fa-bookmark fa-xl"
+                  style="color: #3D38C4"
+                ></i
+              ></span>
                 <p class="card-text">Future Leaders Hub</p>
                 <span class="badge rounded-pill text-bg-secondary">
                     <i class="fa-solid fa-tag"></i>
@@ -126,7 +138,13 @@
             <div class="card h-100" style="border-radius:20px;">
             <img src="/Event/img/card_3.PNG" class="card-img-top img-fluid" alt="...">
             <div class="card-body">
-                <h5 class="card-title fw-bold">Homeless Shelter Support</h5>
+                <h5 class="card-title fw-bold d-flex">Homeless Shelter Support</h5>
+                <span class="d-flex justify-content-end"
+                ><i
+                  class="fa-regular fa-bookmark fa-xl"
+                  style="color: #3D38C4"
+                ></i
+              ></span>
                 <p class="card-text">City Outreach Program</p>
                 <span class="badge rounded-pill text-bg-secondary">
                     <i class="fa-solid fa-tag"></i>
@@ -159,7 +177,13 @@
             <div class="card h-100" style="border-radius:20px;">
             <img src="/Event/img/Card_4.PNG" class="card-img-top img-fluid" alt="...">
             <div class="card-body">
-                <h5 class="card-title fw-bold">Elderly Companion Service</h5>
+                <h5 class="card-title fw-bold d-flex">Elderly Companion Service</h5>
+                <span class="d-flex justify-content-end"
+                ><i
+                  class="fa-regular fa-bookmark fa-xl"
+                  style="color: #3D38C4"
+                ></i
+              ></span>
                 <p class="card-text">Golden Years Alliance</p>
                 <span class="badge rounded-pill text-bg-secondary">
                     <i class="fa-solid fa-tag"></i>
@@ -184,7 +208,13 @@
             <div class="card h-100" style="border-radius:20px;">
             <img src="/Event/img/card_5.PNG" class="card-img-top img-fluid" alt="...">
             <div class="card-body">
-                <h5 class="card-title fw-bold">Animal Shelter Assistant</h5>
+                <h5 class="card-title fw-bold d-flex">Animal Shelter Assistant</h5>
+                <span class="d-flex justify-content-end"
+                ><i
+                  class="fa-regular fa-bookmark fa-xl"
+                  style="color: #3D38C4"
+                ></i
+              ></span>
                 <p class="card-text">Paws & Claws Rescue</p>
                 <span class="badge rounded-pill text-bg-secondary">
                     <i class="fa-solid fa-tag"></i>
@@ -209,7 +239,13 @@
             <div class="card h-100" style="border-radius:20px;">
             <img src="/Event/img/card_6.PNG" class="card-img-top img-fluid" alt="...">
             <div class="card-body">
-                <h5 class="card-title fw-bold">Coastal Conservation Project</h5>
+                <h5 class="card-title fw-bold d-flex">Coastal Conservation Project</h5>
+                <span class="d-flex justify-content-end"
+                ><i
+                  class="fa-regular fa-bookmark fa-xl"
+                  style="color: #3D38C4"
+                ></i
+              ></span>
                 <p class="card-text">Ocean Guardians</p>
                 <span class="badge rounded-pill text-bg-secondary">
                     <i class="fa-solid fa-tag"></i>
@@ -242,6 +278,12 @@
 <script>
     loadComponent("navber","/Event/html/nav.html")
     loadComponent("footer","/Event/html/footer.html")
+          let cardIcon = document.getElementsByClassName("fa-bookmark");
+      for (i = 0; i < cardIcon.length; i++) {
+        cardIcon[i].addEventListener("click", function () {
+          this.classList.toggle("fa-solid");
+        });
+      }
 </script>
 
 </body>
