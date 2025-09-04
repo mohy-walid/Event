@@ -1,19 +1,49 @@
+
 .hero-sec {
-    background: linear-gradient(to bottom, rgba(115, 26, 249, 0.764), rgb(151, 230, 244));
+  background: linear-gradient(to right, rgba(115, 26, 249, 0.85), rgba(65, 182, 203, 0.85)),
+  url('../img/bg-pattern.svg') no-repeat center/cover;
+  color: white;
+}
+
+.sidebar {
+    background: linear-gradient(180deg, #6a11cb, #4d85e6);
+    min-height: 100vh;
     color: white;
-}
-.sidebar .nav-link {
-  transition: background-color 0.2s ease;
+    box-shadow: 2px 0 10px rgba(0,0,0,0.15);
+  }
+  .sidebar .nav-link {
+    color: #f0f0f0;
+    transition: 0.3s;
+  }
+  .sidebar .nav-link:hover {
+    background: rgba(255, 255, 255, 0.15);
+    color: #f0f0f0;
+    border-radius: 8px;
+    padding-left: 12px;
+  }
+
+  /* Offcanvas */
+  .custom-offcanvas {
+    background: linear-gradient(180deg, #6a11cb, #6f92cd);
+    color: white;
+    box-shadow: 4px 0 20px rgba(0,0,0,0.3);
+  }
+  .custom-offcanvas .nav-link {
+    color: #f0f0f0;
+  }
+  .custom-offcanvas .nav-link:hover {
+    background: rgba(255,255,255,0.2);
+    color: #f0f0f0;
+    border-radius: 8px;
+    padding-left: 12px;
+  }
+
+.card-custom {
+  border-radius: 15px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
-.sidebar .nav-link:hover {
-  background-color: #f0f0f0; 
+.card-custom:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.1);
 }
-
-.sidebar .nav-link.active {
-  background-color: #6741f0; 
-  color: #fff !important;
-  font-weight: bold;        
-  border-radius: 15px; 
-}
-
