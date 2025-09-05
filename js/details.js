@@ -1,4 +1,4 @@
- const eventDate = new Date("Aug 29, 2025 10:00:00").getTime();
+ const eventDate = new Date("October 10, 2025 10:00:00").getTime();
   const countdown = document.getElementById("countdown");
 
   setInterval(function () {
@@ -6,7 +6,7 @@
     let distance = eventDate - now;
 
     if (distance < 0) {
-      countdown.innerHTML = "Event Started!";
+      countdown.innerHTML = "Event Started Now!";
       return;
     }
 
