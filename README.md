@@ -20,6 +20,10 @@ It also supports volunteering opportunities, posting new events, and contacting 
       - [Feature 4 Live Design Preview](#feature-4-live-design-preview)
     - [Feature 5: Contact Us](#feature-5-contact-us)
       - [Feature 5 Live Design Preview](#feature-5-live-design-preview)
+    - [Feature 6: Events Page](#feature-6-events-page)  
+      - [Feature 6 Live Design Preview](#feature-6-live-design-preview)  
+    - [Feature 7: Profile Page](#feature-7-profile-page)  
+      - [Feature 7 Live Design Preview](#feature-7-live-design-preview)  
   - [System Requirements](#system-requirements)
   - [For Registered Users](#for-registered-users)
 
@@ -120,6 +124,48 @@ It also supports volunteering opportunities, posting new events, and contacting 
 - Contact form (Name, Email, Message)
 - Social media links
 - Email/phone support details
+
+---
+### Feature 6: Events Page
+
+#### Feature 6 Live Design Preview
+![Events Screenshot](./img/events.png)  
+*Fig 6.1 - Events listing page with filters and categories*
+
+---
+
+**Description:**  
+- A dedicated page for browsing all events on the platform.
+- Users can search and filter events based on categories, dates, or locations.
+
+**Key Functionalities:**
+- Display events in a clean, card-based layout.
+- Filter by event type (conference, workshop, exhibition, etc.).
+- Filter by date and location.
+- Keyword-based search bar.
+- Save events as favorites (bookmark).
+- “Visit Now” button to navigate to event details.
+
+---
+### Feature 7: Profile Page
+
+#### Feature 7 Live Design Preview
+![profile Screenshot](./img/contact.png)  
+*Fig 7.1 - User profile page with personal info and event tracking*
+
+---
+
+**Description:**  
+- A personal page for each registered user that shows their basic details, activities on the platform, and the events they have registered for.
+
+**Key Functionalities:**
+- Display profile information (name, email, photo, phone number).
+- Sidebar navigation (Dashboard – My Events – Registered Events – Volunteering – Notifications – Settings).
+- Manage user’s own events (edit/delete).
+- Cancel event registrations.
+- Track volunteering opportunities (Active – Pending – Withdrawn).
+- Edit profile details (Edit Profile).
+- Logout from account.
 
 ---
 
