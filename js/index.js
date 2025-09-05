@@ -46,3 +46,9 @@ document.querySelectorAll(".visit-btn").forEach(function(btn){
     window.location.href = "html/details.html";
   });
 });
+
+document.querySelectorAll(".explore-btn").forEach(function(btn){
+  btn.addEventListener("click", function(){
+    window.location.href = "html/Events.html";
+  });
+});
