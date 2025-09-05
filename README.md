@@ -150,7 +150,7 @@ It also supports volunteering opportunities, posting new events, and contacting 
 ### Feature 7: Profile Page
 
 #### Feature 7 Live Design Preview
-![profile Screenshot](./img/contact.png)  
+![profile Screenshot](./img/profile.png)  
 *Fig 7.1 - User profile page with personal info and event tracking*
 
 ---
