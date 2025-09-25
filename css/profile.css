@@ -52,8 +52,20 @@
   .custom-offcanvas {
     width: 450px !important;
   }
+<<<<<<< HEAD
+=======
+@media (max-width: 576px) {
+  .custom-offcanvas {
+    width: 250px !important;
+  }
+>>>>>>> 2ff6b2c8411dde5ebd2439382dd02c1f00edcc44
 }
 
+@media (min-width: 1025px) {
+  .custom-offcanvas {
+    width: 450px !important;
+  }
+}
 .card-custom {
   border-radius: 15px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
