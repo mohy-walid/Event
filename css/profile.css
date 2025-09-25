@@ -50,6 +50,7 @@
 }
 .card-custom {
   border-radius: 15px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
 
 .card-custom:hover {
