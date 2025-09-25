@@ -1,10 +1,5 @@
 /* Navbar Styles */
 
-.logo {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-}
 .logo img {
   width: 32px;
   height: auto;
@@ -165,3 +160,4 @@ header .btn-primary:hover {
   width: 40px;
   height: 40px;
 }
+
