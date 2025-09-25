@@ -37,7 +37,17 @@
     border-radius: 8px;
     padding-left: 12px;
   }
+@media (max-width: 576px) {
+  .custom-offcanvas {
+    width: 250px !important;
+  }
+}
 
+@media (min-width: 1025px) {
+  .custom-offcanvas {
+    width: 450px !important;
+  }
+}
 .card-custom {
   border-radius: 15px;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
