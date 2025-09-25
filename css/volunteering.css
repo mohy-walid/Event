@@ -1,3 +1,6 @@
+body{
+  margin-top: 70px !important;
+}
 .card{
     animation: motion 2s linear;
 }
