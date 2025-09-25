@@ -49,3 +49,13 @@ body{
     }
 }
 
+@media (max-width: 768px) {
+  .filtration .form-control {
+    max-width: 100% !important;
+  }
+
+  .filtration .dropdown,
+  .filtration .btn {
+    flex: 1 1 100%; 
+  }
+}
