@@ -1,4 +1,6 @@
-
+body{
+  margin-top: 70px !important;
+}
 .hero-sec {
   background: linear-gradient(to right, rgba(115, 26, 249, 0.85), rgba(65, 182, 203, 0.85)),
   url('../img/bg-pattern.svg') no-repeat center/cover;
