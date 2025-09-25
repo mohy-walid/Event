@@ -1,6 +1,7 @@
 body{
-  margin-top: 80px !important;
+  margin-top: 100px !important;
 }
+
 .card{
     animation: motion 2s linear;
 }
@@ -22,7 +23,7 @@ body{
         opacity:0;
     }
     100%{
-        transform: scale(1.1);
+        /* transform: scale(1.1); */
         opacity:2;
     }
 }
@@ -48,4 +49,15 @@ body{
         transform: translateY(0);
         opacity: 1;
     }
+}
+
+@media (max-width: 768px) {
+  .filtration .form-control {
+    max-width: 100% !important;
+  }
+
+  .filtration .dropdown,
+  .filtration .btn {
+    flex: 1 1 100%; 
+  }
 }
